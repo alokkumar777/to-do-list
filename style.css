@@ -1,0 +1,103 @@
+/* font-family: 'Rubik Doodle Shadow', system-ui; */
+/* font-family: 'Rethink Sans', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+:root {
+    --snow: #FBF5F3;
+    --cambridge-blue: #8DAA9D;
+    --violet-JTC: #522B47;
+    --claret: #7B0828;
+    --night: #0F0E0E;
+    --celadon: #94E8B4;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+}
+
+ul {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Rethink Sans', sans-serif;
+    /* display: flex; */
+    flex-direction: column;
+    opacity: .7;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.container {
+    margin: auto;
+    height: auto;
+    width: 25%;
+    /* background-color: #0F0E0E; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.task-input-box {
+    font-size: 1rem;
+    margin: 1rem;
+    padding: .4rem;
+    border-radius: .5rem;
+    outline: none;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.add-task-btn {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    padding: .4rem;
+    width: 50%;
+    border-radius: .5rem;
+    background-color: var(--snow);
+    color: var(--night);
+    border: .1rem solid var(--night);
+    cursor: pointer;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, .6);
+    transition: background-color .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.add-task-btn:hover {
+    background-color: var(--celadon);
+    color: var(--night);
+    border: .1rem solid var(--night);
+    /* box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .3); */
+}
+
+.add-task-btn:active {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.task-input-box:hover {
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .3);
+}
+
+.material-symbols-outlined {
+    font-size: .1rem;
+}
+
+li { 
+    /* margin-left: -10px; */
+    display: flex;
+    gap: 10rem;
+    transition: font-size .1s ease-in-out, text-decoration .1s ease-in-out;
+}
+
+li:hover {
+    font-size: 1.45rem;
+    text-decoration: underline;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+}
